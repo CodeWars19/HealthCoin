@@ -5,12 +5,38 @@
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: #4db896;
+  background-color: #07a991;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+#title {
+  color: black;
+  font-size: 92px;
+  font-weight: 4000;
+  letter-spacing: 0.1rem;
+  animation: fadeEffect 1s;
+}
+
+#body{
+  font-size: 30px;
+  color: black;
+  font-weight: 50;
+  animation: fadeEffect 1s;
+}
+
+#footer{
+  font-size: 15px;
+  color: black;
+  font-weight: 50;
+  animation: fadeEffect 1s;
+}
+
+img{
+  animation: fadeEffect 1s;
 }
 
 a {
@@ -64,15 +90,18 @@ h1 {
 }
 
 button {
+  width: 300px;
+  height: 80px;
   border-radius: 8px;
   border: 1px solid transparent;
   padding: 0.6em 1.2em;
-  font-size: 1em;
+  font-size: 2em;
   font-weight: 500;
   font-family: inherit;
   background-color: #1a1a1a;
   cursor: pointer;
   transition: border-color 0.25s;
+  animation: fadeEffect 1s;
 }
 button:hover {
   border-color: #646cff;
@@ -80,6 +109,11 @@ button:hover {
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
+}
+
+@keyframes fadeEffect {
+  from {opacity: 0;}
+  to {opacity: 1;}
 }
 
 @media (prefers-color-scheme: light) {
